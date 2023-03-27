@@ -10,7 +10,7 @@ function App() {
           Ohhhhh bonjour madame
         </h2>
         <p>
-          non c'était juste pour te dire que j'allais mettre plein de truc dessus donc faudra y aller régulièrement
+          non c'était juste pour te dire que j'allais mettre plein de truc dessus donc faudra y aller régulièrement ;)
         </p>
       </header>
     </div>
