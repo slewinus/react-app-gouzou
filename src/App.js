@@ -1,16 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import gif from './gif.gif';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>
-          Ohhhhh bonjour madame
-        </h2>
+        <img src={gif} alt="gif"/>
         <p>
-          non c'était juste pour te dire que j'allais mettre plein de truc dessus donc faudra y aller régulièrement ;)
+            Bon ok j'ai compris comment ça marche a peut prêt mdr
         </p>
       </header>
     </div>
