@@ -3,17 +3,10 @@ import './App.css';
 
 function App() {
     const [gifs, setGifs] = useState([]);
-    const [ipAddress, setIpAddress] = useState('');
 
 
     useEffect(() => {
-        fetch('https://api.ipify.org?format=json')
-            .then((response) => response.json())
-            .then((data) => setIpAddress(data.ip))
-            .catch((error) => console.log(error));
-
-
-       // Tableau de liens vers les GIFs
+        // Tableau de liens vers les GIFs
         const gifLinks = [
             'https://i.gifer.com/2GU.gif',
             'https://i.gifer.com/VZmo.gif',
@@ -42,8 +35,6 @@ function App() {
                 {gifs.map((gif, index) => (
                     <img key={index} src={gif} alt="GIF animé" />
                 ))}
-                <h1>Adresse IP de l'utilisateur :</h1>
-                <p>{ipAddress}</p>
                 <p>
                     Bon ok j'ai compris comment ça marche à peu près mdr
                 </p>
