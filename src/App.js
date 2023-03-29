@@ -6,7 +6,6 @@ function App() {
 
 
     useEffect(() => {
-        // Tableau de liens vers les GIFs
         const gifLinks = [
             'https://i.gifer.com/2GU.gif',
             'https://i.gifer.com/VZmo.gif',
@@ -14,7 +13,6 @@ function App() {
             'https://media.giphy.com/media/Rlwz4m0aHgXH13jyrE/giphy.gif'
         ];
 
-        // Générer 3 index aléatoires
         const randomIndexes = [];
         while (randomIndexes.length < 1) {
             const index = Math.floor(Math.random() * gifLinks.length);
@@ -23,7 +21,6 @@ function App() {
             }
         }
 
-        // Récupérer les liens correspondant aux index aléatoires
         const randomGifs = randomIndexes.map(index => gifLinks[index]);
 
         setGifs(randomGifs);
@@ -38,6 +35,13 @@ function App() {
                 <p>
                     Bon ok j'ai compris comment ça marche à peu près mdr
                 </p>
+                <button className="button"
+                    onClick={() => {
+                        console.log("Hello world");
+                    }}
+                >
+                    Test je sais pas si ça marche bien
+                </button>
             </header>
         </div>
     );
