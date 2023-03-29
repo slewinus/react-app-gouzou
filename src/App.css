@@ -42,9 +42,19 @@ p {
   font-family: "Andale Mono";
 }
 
+h2{
+  color: white;
+  font-family: "Andale Mono";
+}
+
 h3{
   color: darkgrey;
   font-family:"Andale Mono";
+}
+
+h4{
+  color: darkgray;
+  font-family: "Andale Mono";
 }
 
 .button{

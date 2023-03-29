@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import axios from "axios";
 
 function App() {
     const [gifs, setGifs] = useState([]);
-
+    const [ip, setIP] = useState('');
+    const getData = async () => {
+        const res = await axios.get('https://geolocation-db.com/json/')
+        console.log(res.data);
+        setIP(res.data.IPv4)
+    }
 
     useEffect(() => {
         const gifLinks = [
@@ -15,6 +21,7 @@ function App() {
             'https://i.gifer.com/u9o.gif',
 
         ];
+        getData()
 
         const randomIndexes = [];
         while (randomIndexes.length < 1) {
@@ -39,6 +46,8 @@ function App() {
                     <p>
                     c'est bon t'es content t'as tes gifs ? casse toi maintenant.
                     </p>
+                    <h4>tiens ton ip quand même bg</h4>
+                    <h2>{ip}</h2>
                 </div>
 
             </header>
