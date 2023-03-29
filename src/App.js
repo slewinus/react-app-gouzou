@@ -10,7 +10,10 @@ function App() {
             'https://i.gifer.com/2GU.gif',
             'https://i.gifer.com/VZmo.gif',
             'https://i.gifer.com/5GJg.gif',
-            'https://media.giphy.com/media/Rlwz4m0aHgXH13jyrE/giphy.gif'
+            'https://i.gifer.com/kkd.gif',
+            'https://i.gifer.com/PDE.gif',
+            'https://i.gifer.com/u9o.gif',
+
         ];
 
         const randomIndexes = [];
@@ -30,18 +33,14 @@ function App() {
         <div className="App">
             <header className="App-header">
                 {gifs.map((gif, index) => (
-                    <img key={index} src={gif} alt="GIF animé" />
+                    <img className="gify-img2" key={index} src={gif} alt="GIF animé" />
                 ))}
-                <p>
-                    Bon ok j'ai compris comment ça marche à peu près mdr
-                </p>
-                <button className="button"
-                    onClick={() => {
-                        console.log("Hello world");
-                    }}
-                >
-                    Test je sais pas si ça marche bien
-                </button>
+                <div className="container">
+                    <p>
+                    c'est bon t'es content t'as tes gifs ? casse toi maintenant.
+                    </p>
+                </div>
+
             </header>
         </div>
     );

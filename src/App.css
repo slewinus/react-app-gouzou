@@ -88,3 +88,14 @@ h3{
 
 .button:focus:not(:active) {
   box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gify-img2{
+  width: 50%;
+  height: 350px;
+}
